@@ -1,6 +1,6 @@
 [package]
 name = "webservice_tutorial"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = ["Harrison Hemstreet <harrisonhemstreet@gmail.com>"]
 description = "Learn how to build a webservice in Rust!"
