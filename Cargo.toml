@@ -2,9 +2,10 @@
 name = "webservice_tutorial"
 version = "1.0.0"
 edition = "2021"
-authors = ["Harrison Hemstreet"]
+authors = ["Harrison Hemstreet <harrisonhemstreet@gmail.com>"]
 description = "Learn how to build a webservice in Rust!"
 repository = "https://github.com/harrisonhemstreet/webservice_tutorial_rust"
+license = "MIT OR Apache-2.0"
 build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
