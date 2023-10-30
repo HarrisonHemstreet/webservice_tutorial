@@ -47,7 +47,7 @@ Alternatively, you can find documentation for each crate on [docs.rs](https://do
 3. **Test Routes**: Open your browser or use a tool like Postman to hit the following route:
 
     ```
-    http://127.0.0.1:8080/blogs
+    http://127.0.0.1:8080/blog
     ```
 
 ### Database GUI (PgAdmin4)
