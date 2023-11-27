@@ -9,24 +9,12 @@ pub struct Tag {
     pub edited: Option<String>,
 }
 #[derive(sqlx::Type, Serialize, Deserialize, Debug, Clone, Copy)]
-#[sqlx(type_name = "assoc_table", rename_all="snake_case")]
+#[sqlx(type_name = "assoc_table", rename_all = "snake_case")]
 pub enum AssocTable {
-    Activity,
     Blog,
-    City,
-    Client,
-    Continent,
-    Country,
-    Event,
-    Hotel,
-    JobListing,
-    PartnerVendor,
-    ProductFeature,
-    Region,
-    Restaurant,
 }
 #[derive(Serialize, Deserialize, Debug)]
 pub struct TagQueryParams {
     pub id: Option<i32>,
-    pub table: Option<AssocTable>
+    pub table: Option<AssocTable>,
 }
