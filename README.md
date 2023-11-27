@@ -43,10 +43,16 @@ Alternatively, you can find documentation for each crate on [docs.rs](https://do
     ```bash
     docker compose up -d
     ```
-3. **Upload Postman Collection**: Open up Postman locally via the desktop client. Then upload the file entitled `Web Service Tutorial.postman_collection.json`. You should now be able to test the routes.
-4. **Get a Bearer Token**: Go to the `create_user` route under the `auth` folder. Create a user by hitting the `Send` button. If there's a problem, change both the username and password. After you have successfully created a new user, check the headers. Under the `authorization` header, you should see the bearer token. Copy everything after where it says `Bearer`. Now click on the `Web Service Tutorial` Postman collection. Under the `Authorization` page, you should see a `Type` dropdown. Select `Bearer Token`. After you select `Bearer Token`, underneath should apear another dropdown that says `Token`. Paste the copied bearer token here from before. You should now be authorized for four hours, or for however long `JWT_HOURS_ACTIVE` is set to in your .env file.
+3. **Upload Postman Collection**: Open up Postman locally via the desktop client. Then upload the file entitled `Web Service Tutorial.postman_collection.json`. You should now have access to the Postman collection.
+4. **Get a Bearer Token**:
+    1. Go to the `create_user` route under the `auth` folder.
+    2. Create a user by hitting the `Send` button. If there's a problem, change both the username and password.
+    3. After you have successfully created a new user, check the headers. Under the `authorization` header, you should see the bearer token. Copy everything after where it says `Bearer`.
+    4. Now click on the `Web Service Tutorial` Postman collection.
+    5. Under the `Authorization` page, you should see a `Type` dropdown.
+    6. Select `Bearer Token`. After you select `Bearer Token`, underneath should apear another dropdown that says `Token`. Paste the copied bearer token here from before. You should now be authorized for four hours, or for however long `JWT_HOURS_ACTIVE` is set to in your .env file.
 
-3. **Test Routes**: Open your browser or use a tool like Postman to hit the following route:
+6. **Test Routes**: Open your browser or use a tool like Postman to hit the following route:
 
     ```
     http://127.0.0.1:8080/blog
